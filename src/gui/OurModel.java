@@ -14,7 +14,7 @@ import javax.swing.table.AbstractTableModel;
  */
 public class OurModel extends AbstractTableModel{
     FieldValues values = new FieldValues();
-    int array[][];
+    public int array[][];
     
     public OurModel() {
         this.array = values.getCoxArray();
@@ -32,7 +32,7 @@ public class OurModel extends AbstractTableModel{
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (Object)array[rowIndex][columnIndex];
     }
 
     @Override

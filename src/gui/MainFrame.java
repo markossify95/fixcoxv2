@@ -5,6 +5,9 @@
  */
 package gui;
 
+import fixcox.FieldValues;
+import javax.swing.table.TableModel;
+
 /**
  *
  * @author Puskas
@@ -16,6 +19,7 @@ public class MainFrame extends javax.swing.JFrame {
      */
     public MainFrame() {
         initComponents();
+        createTableWithOurModel();
     }
 
     /**
@@ -108,6 +112,16 @@ public class MainFrame extends javax.swing.JFrame {
                 new MainFrame().setVisible(true);
             }
         });
+    }
+    
+    //Table methods:
+    
+    public void createTableWithOurModel(){
+        OurModel theModel = new OurModel();
+        coxTable.setModel(theModel);
+       //   TEST 
+       //System.out.println(theModel.array[1][2]);
+        coxTable.setTableHeader(null);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
