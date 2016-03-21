@@ -19,6 +19,8 @@ public class FixCox {
     public static void main(String[] args) {
         FmPocetna start = new FmPocetna();
         start.setVisible(true);
+        
+        
     }
     
 }

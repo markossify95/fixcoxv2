@@ -11,9 +11,11 @@ package util;
  */
 public class Util {
     
-    private static int randomBroj(int min, int max) {
+    public static int randomBroj(int min, int max) {
        int range = (max - min) + 1;    
        return (int)(Math.random() * range) + min;
     }
+    
+    
     
 }

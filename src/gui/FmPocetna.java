@@ -136,6 +136,7 @@ public class FmPocetna extends javax.swing.JFrame {
     private void jbtnGuestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnGuestActionPerformed
         MainFrame mf = new MainFrame();
         mf.show();
+        this.dispose();
     }//GEN-LAST:event_jbtnGuestActionPerformed
 
     /**
