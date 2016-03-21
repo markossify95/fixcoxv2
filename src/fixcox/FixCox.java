@@ -5,6 +5,8 @@
  */
 package fixcox;
 
+import gui.FmPocetna;
+
 /**
  *
  * @author Puskas
@@ -15,7 +17,8 @@ public class FixCox {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        FmPocetna start = new FmPocetna();
+        start.setVisible(true);
     }
     
 }
