@@ -29,10 +29,10 @@ public class FmPocetna extends javax.swing.JFrame {
 
         jpnlPocetna = new javax.swing.JPanel();
         jpnlButtons = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jbtnLogin = new javax.swing.JButton();
+        jbtnRegister = new javax.swing.JButton();
+        jbtnGuest = new javax.swing.JButton();
+        jbtnExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -40,26 +40,41 @@ public class FmPocetna extends javax.swing.JFrame {
 
         jpnlButtons.setLayout(new java.awt.BorderLayout());
 
-        jButton1.setText("Login");
+        jbtnLogin.setText("Login");
+        jbtnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnLoginActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Register");
+        jbtnRegister.setText("Register");
+        jbtnRegister.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnRegisterActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("Play As Guest");
+        jbtnGuest.setText("Play As Guest");
 
-        jButton4.setText("Exit");
+        jbtnExit.setText("Exit");
+        jbtnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnExitActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jpnlPocetnaLayout = new javax.swing.GroupLayout(jpnlPocetna);
         jpnlPocetna.setLayout(jpnlPocetnaLayout);
         jpnlPocetnaLayout.setHorizontalGroup(
             jpnlPocetnaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnlPocetnaLayout.createSequentialGroup()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jbtnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jbtnRegister, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
+                .addComponent(jbtnGuest)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jbtnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jpnlButtons, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -69,10 +84,10 @@ public class FmPocetna extends javax.swing.JFrame {
                 .addGap(0, 254, Short.MAX_VALUE)
                 .addGroup(jpnlPocetnaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jpnlPocetnaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton1)
-                        .addComponent(jButton2)
-                        .addComponent(jButton3)
-                        .addComponent(jButton4))
+                        .addComponent(jbtnLogin)
+                        .addComponent(jbtnRegister)
+                        .addComponent(jbtnGuest)
+                        .addComponent(jbtnExit))
                     .addComponent(jpnlButtons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
@@ -89,6 +104,20 @@ public class FmPocetna extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jbtnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnLoginActionPerformed
+        FmLogin fml = new FmLogin();
+        fml.show();
+    }//GEN-LAST:event_jbtnLoginActionPerformed
+
+    private void jbtnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnRegisterActionPerformed
+        FmRegister fmr = new FmRegister();
+        fmr.show();
+    }//GEN-LAST:event_jbtnRegisterActionPerformed
+
+    private void jbtnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnExitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jbtnExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -126,10 +155,10 @@ public class FmPocetna extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jbtnExit;
+    private javax.swing.JButton jbtnGuest;
+    private javax.swing.JButton jbtnLogin;
+    private javax.swing.JButton jbtnRegister;
     private javax.swing.JPanel jpnlButtons;
     private javax.swing.JPanel jpnlPocetna;
     // End of variables declaration//GEN-END:variables

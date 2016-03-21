@@ -36,7 +36,7 @@ public class FmRegister extends javax.swing.JFrame {
         jtxtCheck = new javax.swing.JTextField();
         jbtnRegister = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Register");
 
         jpnlRegister.setBorder(javax.swing.BorderFactory.createTitledBorder("Enter your name and password"));

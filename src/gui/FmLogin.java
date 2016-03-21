@@ -34,7 +34,7 @@ public class FmLogin extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jbtnLogin = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Insert your username and password"));
