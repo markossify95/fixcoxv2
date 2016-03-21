@@ -5,7 +5,6 @@
  */
 package gui;
 
-import fixcox.FieldValues;
 import javax.swing.table.TableModel;
 
 /**
@@ -38,16 +37,10 @@ public class MainFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Fix - Cox");
 
-        coxTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3"
-            }
-        ));
+        coxTable.setModel(new OurModel());
+        coxTable.setRowHeight(91);
+        coxTable.setRowMargin(2);
+        coxTable.setTableHeader(null);
         jScrollPane1.setViewportView(coxTable);
 
         org.jdesktop.layout.GroupLayout coxPanelLayout = new org.jdesktop.layout.GroupLayout(coxPanel);
@@ -119,9 +112,6 @@ public class MainFrame extends javax.swing.JFrame {
     public void createTableWithOurModel(){
         OurModel theModel = new OurModel();
         coxTable.setModel(theModel);
-       //   TEST 
-       //System.out.println(theModel.array[1][2]);
-        coxTable.setTableHeader(null);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
